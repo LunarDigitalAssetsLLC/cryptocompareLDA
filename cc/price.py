@@ -7,7 +7,7 @@ __pmf_url = 'https://min-api.cryptocompare.com/data/pricemultifull?'
 __avg_url = 'https://min-api.cryptocompare.com/data/generateAvg?'
 __davg_url = 'https://min-api.cryptocompare.com/data/dayAvg?'
 __h_url = 'https://min-api.cryptocompare.com/data/pricehistorical?'
-__cs_url = 'https://www.cryptocompare.com/api/data/coinsnapshot/?'
+__cs_url = 'https://min-api.cryptocompare.com/data/top/exchanges/full?'
 __csf_url = 'https://www.cryptocompare.com/api/data/coinsnapshotfullbyid/?'
 __tp_url = 'https://min-api.cryptocompare.com/data/top/pairs?'
 

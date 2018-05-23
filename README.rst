@@ -1,4 +1,4 @@
-python_cryptocompare
+CryptoCompare Python API Wrapper by LDA
 #############
 
 Python3 Wrapper to query cryptocurrency prices (and more) using the CryptoCompare_ API.
@@ -16,7 +16,7 @@ Import
 
 .. code:: python
 
-   from python_cryptocompare import price as p
+   from cc import price as p
 
 Methods
 =======
@@ -44,8 +44,8 @@ Coin List
 
 .. code:: python
 
-   from python_cryptocompare import price as p
-   print(p.coinSnapshot('btc', 'usd'))
+   from cc import price as p
+   print(p.coin_snapshot('btc', 'usd'))
 
    # ...
    # },
