@@ -1,4 +1,4 @@
-CryptoCompare Python API Wrapper by LDA
+CC | CryptoCompare Python API Wrapper by LDA
 #############
 
 Python3 Wrapper to query cryptocurrency prices (and more) using the CryptoCompare_ API.
@@ -16,27 +16,7 @@ Import
 
 .. code:: python
 
-   from cc import price as p
-
-Methods
-=======
-
-Following API requests are supported:
-- CoinList
-- Price
-- PriceMulti
-- PriceMultiFull
-- PriceHistorical
-- generateAvg
-- dayAvg
-- CoinSnapshot
-- CoinSnapshotFullById
-- HistoMinute
-- HistoHour
-- HistoDay
-- topPairs
-- socialStats
-- miningEquipment
+   import cc
 
 
 Coin List
