@@ -24,8 +24,9 @@ Coin List
 
 .. code:: python
 
-   from cc import price as p
-   print(p.coin_snapshot('btc', 'usd'))
+   import cc
+   cc.get_coin_list(format=False)
+
 
    # ...
    # },
