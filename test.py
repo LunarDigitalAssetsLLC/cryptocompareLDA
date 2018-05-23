@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import cryptocompare
+import cc
 import datetime
 import time
 

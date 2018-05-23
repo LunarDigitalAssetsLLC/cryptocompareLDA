@@ -1,1 +1,1 @@
-from .cryptocompare import *
+from .cc import *
