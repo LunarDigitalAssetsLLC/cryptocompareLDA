@@ -1,4 +1,4 @@
-cryptocompare
+python_cryptocompare
 #############
 
 Python3 Wrapper to query cryptocurrency prices (and more) using the CryptoCompare_ API.
@@ -6,9 +6,7 @@ Python3 Wrapper to query cryptocurrency prices (and more) using the CryptoCompar
 Installation
 ************
 
-.. code:: bash
-   
-   sudo pip3 install cryptocompare
+Installation instructions coming soon.
 
 Usage
 *****
@@ -18,7 +16,7 @@ Import
 
 .. code:: python
 
-   import cryptocompare
+   import cc
 
 Methods
 =======
@@ -28,7 +26,7 @@ Coin List
 
 .. code:: python
 
-   cryptocompare.get_coin_list(format=False)
+   cc.get_coin_list(format=False)
 
    # ...
    # },
@@ -55,11 +53,11 @@ Price
 -----
 .. code:: python
 
-   cryptocompare.get_price('BTC')
+   cc.get_price('BTC')
    # or
-   cryptocompare.get_price('BTC',curr='USD',full=True)
+   cc.get_price('BTC',curr='USD',full=True)
    # or
-   cryptocompare.get_price(['BTC','ETH'],['EUR','GBP'])
+   cc.get_price(['BTC','ETH'],['EUR','GBP'])
 
    # {'BTC': {'EUR': 3709.04, 'GBP': 3354.78},
    #  'ETH': {'EUR': 258.1, 'GBP': 241.25}}
@@ -69,9 +67,9 @@ Historical Price
 .. code:: python
 
    # pass either datetime or time instance
-   cryptocompare.get_historical_price('XMR', timestamp=datetime.datetime(2017,6,6), exchange='CCCAGG')
+   cc.get_historical_price('XMR', timestamp=datetime.datetime(2017,6,6), exchange='CCCAGG')
    # or
-   cryptocompare.get_historical_price('XMR', 'EUR', datetime.datetime(2017,6,6))
+   cc.get_historical_price('XMR', 'EUR', datetime.datetime(2017,6,6))
 
    # {'XMR': {'EUR': 43.05}}
 
@@ -79,20 +77,20 @@ Day
 ---
 .. code:: python
 
-   cryptocompare.get_historical_price_day('BTC', curr='EUR')
+   cc.get_historical_price_day('BTC', curr='EUR')
 
 Hour
 ----
 .. code:: python
 
-   cryptocompare.get_historical_price_hour('BTC', curr='EUR')
+   cc.get_historical_price_hour('BTC', curr='EUR')
 
 Average
 -------
 
 .. code:: python
 
-   cryptocompare.get_avg('BTC', curr='EUR', exchange='Kraken')
+   cc.get_avg('BTC', curr='EUR', exchange='Kraken')
 
    # {
    # 'MARKET': 'CUSTOMAGG',
@@ -120,7 +118,7 @@ Exchanges
 
 .. code:: python
 
-   cryptocompare.get_exchanges()
+   cc.get_exchanges()
 
 
 Credit
@@ -128,20 +126,10 @@ Credit
 
 Thanks to CryptoCompare_ for providing this service and building a community around everything crypto related.
 
-Tipjar
-******
+.. _Cryptocompare: https://min-api.c.com/
 
-If you like this and/or use it in a project, show some love:
-
-BTC: ``1JJMk3QmcyTjPsvFpKUhgvPNd3KcWCKc86``
-
-ETH: ``0xe3c951a953f56d0ec88800386281e88ea9bef630``
-
-...or head over to https://www.cryptocompare.com and tip CryptoCompare_.
-
-.. _Cryptocompare: https://min-api.cryptocompare.com/
+Thanks to lagerfeuer for getting the project started.
 
 Disclaimer
 **********
-
-This is a hobby project, no guarantees. If you find bugs, open an issue. If you want additional features, open an issue or create a pull request.
+If you want additional features, open an issue or create a pull request.
