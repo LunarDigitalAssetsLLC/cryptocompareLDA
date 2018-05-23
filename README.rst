@@ -16,17 +16,36 @@ Import
 
 .. code:: python
 
-   import cc
+   from python_cryptocompare import price as p
 
 Methods
 =======
+
+Following API requests are supported:
+- CoinList
+- Price
+- PriceMulti
+- PriceMultiFull
+- PriceHistorical
+- generateAvg
+- dayAvg
+- CoinSnapshot
+- CoinSnapshotFullById
+- HistoMinute
+- HistoHour
+- HistoDay
+- topPairs
+- socialStats
+- miningEquipment
+
 
 Coin List
 ---------
 
 .. code:: python
 
-   cc.get_coin_list(format=False)
+   from python_cryptocompare import price as p
+   print(p.coinSnapshot('btc', 'usd'))
 
    # ...
    # },
@@ -46,8 +65,6 @@ Coin List
    #  'SortOrder': '1'
    # },
    # ...
-
-If ``format`` is ``True``, the coin list is returned as Python list.
 
 Price
 -----
